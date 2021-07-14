@@ -1,0 +1,18 @@
+version: 1
+job:
+  type: "ingestion"
+source:
+  endpoint: "gittest"
+  properties:
+    source_file_pattern: "/json/ml.json"
+    format: "json"
+    charset: "UTF-8"
+    partial_load: false
+    format_properties:
+      clean_column_name: true
+      multiline: true
+schema:
+  schema_derivation_strategy: "source"
+  strict_schema_check: true
+  discard: true
+folder: "/kl"

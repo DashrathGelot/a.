@@ -1,0 +1,6 @@
+version: 1
+job:
+  type: "processing"
+source:
+  endpoint: "customer_data"
+  incremental: true

@@ -1,0 +1,20 @@
+version: 1
+job:
+  type: "processing"
+source:
+  endpoint: "customer_data"
+  properties:
+    table: "customer"
+  incremental: false
+  additional_columns:
+  - name: "created_time"
+    value: "10090891"
+target:
+  endpoint: "customer_data"
+  operation: "delete"
+  soft_delete: false
+  properties:
+    table: "customer_target1"
+    template: "default"
+  primary_key_columns:
+  - "id"

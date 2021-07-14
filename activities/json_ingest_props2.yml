@@ -1,0 +1,17 @@
+version: 1
+job:
+  type: "ingestion"
+source:
+  endpoint: "json_files"
+  properties:
+    source_file_pattern: "customer1.json"
+    format: "json"
+    charset: "UTF-8"
+    partial_load: false
+    format_properties:
+      clean_column_name: false
+      multiline: false
+schema:
+  schema_derivation_strategy: "source"
+  strict_schema_check: true
+  discard: true

@@ -1,0 +1,5 @@
+version: 1
+context_stage_mappings:
+- context: {}
+  rerun_batch: false
+folder: "/f2/r2"

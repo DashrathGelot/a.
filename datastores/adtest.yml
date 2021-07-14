@@ -1,0 +1,10 @@
+version: 1
+metadata:
+  tags:
+  - "let"
+  - "mets"
+  description: |-
+    let's test new dataricls
+    asdjfa
+    sdf
+technology: "databricks"

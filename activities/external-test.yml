@@ -1,0 +1,13 @@
+version: 1
+job:
+  type: "external"
+config:
+  endpoint: "adtest"
+  properties:
+    run_name: "test"
+    task: "notebook"
+lineages:
+  source:
+  - endpoint: "new_jdbc"
+    properties:
+      table: ""

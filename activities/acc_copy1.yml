@@ -1,0 +1,5 @@
+version: 1
+job:
+  type: "constraint_checks"
+source: {}
+folder: "/kl/aws"
