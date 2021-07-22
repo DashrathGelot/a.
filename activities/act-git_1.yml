@@ -2,7 +2,7 @@ version: 1
 job:
   type: "ingestion"
 source:
-  endpoint: "test"
+  endpoint: "lo_db"
   properties:
     source_file_pattern: "/user/"
     format: "delimited"
